@@ -7,10 +7,11 @@ More info about netfilter here-
 https://home.regit.org/netfilter-en/using-nfqueue-and-libnetfilter_queue/
 
 Requirement-
-  Python 2/3
-  libnetfilter-queue-dev
-  scapy
-  (Used on Debian + Ubuntu)
+  * Python 2/3
+  * libnetfilter-queue-dev
+  * scapy
+  * (Used on Debian + Ubuntu)
+
 
 The script was originally written to MITM a popular VPN software in real time. A few years later, for a separate project, I needed to 'convince' some malicious servers that my HTTP client is (amongst other things) of Korean dialicts. This script was modified to change the "Accept-Language:" to "ko-KR" for HTTP traffic.
 
