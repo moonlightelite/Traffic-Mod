@@ -22,22 +22,22 @@ Steps-
   5. Profit!
 
 Questions-
-  Which popular VPN software are you talking about?
-  
+  1. Which popular VPN software are you talking about?
+ 
   No comment.
   
-  Does it support HTTPS?
+  2. Does it support HTTPS?
   
   No. Use Burp or https://mitmproxy.org/ for that.
   
-  The script doesn't work for Python 2!
+  3. The script doesn't work for Python 2!
   
   Meh. The script was originally for Python 2 (it's an old script!)
   
-  What if I want to add/remove data from TCP packets that changes the length?
+  4. What if I want to add/remove data from TCP packets that changes the length?
   
   It's possible to keeptrack the SYN/ACK numbers to reflect the change, but you'd have to do it yourself.
   
-  Should I use single thread or multi-queue mode?
+  5. Should I use single thread or multi-queue mode?
   
   Surprisingly single thread has pretty good performance. I got multi-MB/s perforance out of it. I usually set queue # = number of CPU physical cores. You can also add CPU core pinning to the iptable rule for better performance.
